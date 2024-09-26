@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "IRdJVraMut7K9mR/IRl3Wt/lOuqf86wZgiEtbbH9BDNZAbQ8VDZn+RkLrXNvgG6aTGNpgyMPs0ezZY176YBW7g==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Caching\\MovieDB.Caching.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\snaqu\\.nuget\\packages\\ardalis.result\\10.0.0\\ardalis.result.10.0.0.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\ardalis.result.aspnetcore\\10.0.0\\ardalis.result.aspnetcore.10.0.0.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\microsoft.extensions.caching.stackexchangeredis\\8.0.8\\microsoft.extensions.caching.stackexchangeredis.8.0.8.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\pipelines.sockets.unofficial\\2.2.8\\pipelines.sockets.unofficial.2.2.8.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\stackexchange.redis\\2.7.27\\stackexchange.redis.2.7.27.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\system.io.pipelines\\5.0.1\\system.io.pipelines.5.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

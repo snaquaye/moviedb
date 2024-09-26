@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "xfneHKMaVWm4CS58ZBZHMQogOucSmnXOxSr9h19f9poZvL0/wvdevpSl12yLDJy2thJK+IvmceYa1vUTer8+jQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Services\\MovieDB.Services.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\snaqu\\.nuget\\packages\\ardalis.result\\10.0.0\\ardalis.result.10.0.0.nupkg.sha512",
+    "C:\\Users\\snaqu\\.nuget\\packages\\ardalis.result.aspnetcore\\10.0.0\\ardalis.result.aspnetcore.10.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

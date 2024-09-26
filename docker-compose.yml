@@ -1,0 +1,56 @@
+﻿services:
+  movie.database:
+    container_name: sql-server
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
+    restart: always
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "WayMaker@2024"
+    ports:
+      - 1433:1433
+    volumes:
+      - "movie.database-volume:/var/opt/mssql"
+    networks:
+      - movie-network
+  movie.redis-cache:
+    image: redis:7.4-alpine
+    restart: always
+    ports:
+      - '6379:6379'
+    volumes:
+      - "movie.redis-cache-volume:/var/opt/redis"
+    networks:
+      - movie-network
+  moviedb.api:
+    image: moviedb.api
+    build:
+      context: ./server
+      dockerfile: MovieDB.Api/Dockerfile
+    depends_on:
+      - movie.redis-cache
+      - movie.database
+    networks:
+      - movie-network
+    ports:
+      - 8080:8080
+      - 8081:8081
+  moviedb.web:
+    image: moviedb.web
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    depends_on:
+      - moviedb.api
+    networks:
+      - movie-network
+    ports:
+      - 80:80
+        
+volumes:
+  movie.database-volume:
+  movie.redis-cache-volume:
+  
+networks:
+  movie-network:
+    external: true

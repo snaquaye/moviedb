@@ -1,0 +1,175 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "Ardalis.Result/10.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Ardalis.Result.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Ardalis.Result.dll": {}
+        }
+      },
+      "Ardalis.Result.AspNetCore/10.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Ardalis.Result": "10.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Ardalis.Result.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/Ardalis.Result.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "MovieDB.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Ardalis.Result.AspNetCore": "10.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieDB.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieDB.Core.dll": {}
+        }
+      },
+      "MovieDB.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MovieDB.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieDB.Shared.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Ardalis.Result/10.0.0": {
+      "sha512": "JCUSQl+9dbL7kUltUpFmUeBTnC89fEDEtjIhLZTKymeV9DeWjfxdFhN+vmrKARqzOluH/eyxbUoA6mKqctEzFQ==",
+      "type": "package",
+      "path": "ardalis.result/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.result.10.0.0.nupkg.sha512",
+        "ardalis.result.nuspec",
+        "icon.png",
+        "lib/net6.0/Ardalis.Result.dll",
+        "lib/net7.0/Ardalis.Result.dll",
+        "lib/net8.0/Ardalis.Result.dll",
+        "lib/netstandard2.0/Ardalis.Result.dll"
+      ]
+    },
+    "Ardalis.Result.AspNetCore/10.0.0": {
+      "sha512": "/zBTL8muFD4LOaPelpSGmFSyCjOZ++9eNmZhgVOnVzhvqcFRsWXlhCFu8fDCDxaUJ82y+kbXOpIbY8Z4HVpulw==",
+      "type": "package",
+      "path": "ardalis.result.aspnetcore/10.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ardalis.result.aspnetcore.10.0.0.nupkg.sha512",
+        "ardalis.result.aspnetcore.nuspec",
+        "icon.png",
+        "lib/net6.0/Ardalis.Result.AspNetCore.dll",
+        "lib/net7.0/Ardalis.Result.AspNetCore.dll",
+        "lib/net8.0/Ardalis.Result.AspNetCore.dll"
+      ]
+    },
+    "MovieDB.Core/1.0.0": {
+      "type": "project",
+      "path": "../MovieDB.Core/MovieDB.Core.csproj",
+      "msbuildProject": "../MovieDB.Core/MovieDB.Core.csproj"
+    },
+    "MovieDB.Shared/1.0.0": {
+      "type": "project",
+      "path": "../MovieDB.Shared/MovieDB.Shared.csproj",
+      "msbuildProject": "../MovieDB.Shared/MovieDB.Shared.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "Ardalis.Result >= 10.0.0",
+      "MovieDB.Core >= 1.0.0",
+      "MovieDB.Shared >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\snaqu\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Services.Abstractions\\MovieDB.Services.Abstractions.csproj",
+      "projectName": "MovieDB.Services.Abstractions",
+      "projectPath": "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Services.Abstractions\\MovieDB.Services.Abstractions.csproj",
+      "packagesPath": "C:\\Users\\snaqu\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Services.Abstractions\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\snaqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Core\\MovieDB.Core.csproj": {
+              "projectPath": "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Core\\MovieDB.Core.csproj"
+            },
+            "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Shared\\MovieDB.Shared.csproj": {
+              "projectPath": "C:\\Users\\snaqu\\source\\repos\\JEC\\MovieDB\\server\\MovieDB.Shared\\MovieDB.Shared.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "Ardalis.Result": {
+            "target": "Package",
+            "version": "[10.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
