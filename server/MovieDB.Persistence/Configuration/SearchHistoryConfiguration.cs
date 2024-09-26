@@ -15,7 +15,6 @@ public class SearchHistoryConfiguration : IEntityTypeConfiguration<SearchHistory
             .IsRequired()
             .HasMaxLength(50);
         builder.Property(p => p.CreatedAt)
-            .IsRequired()
-            .HasDefaultValueSql("getdate()");
+            .IsRequired();
     }
 }

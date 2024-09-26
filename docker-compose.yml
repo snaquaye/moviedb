@@ -1,18 +1,4 @@
 ﻿services:
-  movie.database:
-    container_name: sql-server
-    image: mcr.microsoft.com/mssql/server:2017-latest
-    #image: mcr.microsoft.com/mssql/server:2017-CU11-ubuntu
-    restart: always
-    environment:
-      ACCEPT_EULA: "Y"
-      SA_PASSWORD: "WayMaker@2024"
-    ports:
-      - 1433:1433
-    volumes:
-      - "movie.database-volume:/var/opt/mssql"
-    networks:
-      - movie-network
   movie.redis-cache:
     image: redis:7.4-alpine
     restart: always
@@ -29,7 +15,6 @@
       dockerfile: MovieDB.Api/Dockerfile
     depends_on:
       - movie.redis-cache
-      - movie.database
     networks:
       - movie-network
     ports:

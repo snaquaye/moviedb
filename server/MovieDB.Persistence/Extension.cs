@@ -13,7 +13,7 @@ public static class Extension
     {
         var connection = configuration.GetConnectionString("DefaultConnection");
         
-        services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connection));
+        services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase(connection));
         services.AddScoped<IUnitOfWork, UnitOfWork>();
         services.AddScoped<ISearchHistoryRepository, SearchHistoryRepository>();
     }

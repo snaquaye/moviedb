@@ -37,9 +37,9 @@ export const LandingPage = () => {
       <SearchForm />
       <ul className="flex flex-row space-x-2">
         <li className="text-gray-500 bold">Search History:</li>
-        {searchHistories.map((history) => (
+        {searchHistories.searchTerms.map((history) => (
           <li key={history} className="text-white text-bold bg-red-500 py-1 px-2 rounded-lg">
-            <Link to={`?query=${history.searchTerm}`}>{sanitizSearcheHistory(history.searchTerm)}</Link>
+            <Link to={`?query=${history}`}>{sanitizSearcheHistory(history)}</Link>
           </li>
         ))}
       </ul>

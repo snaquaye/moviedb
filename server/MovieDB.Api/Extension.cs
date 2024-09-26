@@ -39,7 +39,6 @@ public static class Extension
             CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
             CultureInfo.DefaultThreadCurrentUICulture = CultureInfo.InvariantCulture;
             
-            db.Database.Migrate();
             db.Database.EnsureCreated();
         }
         catch (CultureNotFoundException ex)

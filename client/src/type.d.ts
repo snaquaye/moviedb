@@ -62,5 +62,5 @@ export type SearchHistory = {
 export type LoaderSearchResult = {
   data: SearchResult,
   query: string
-  searchHistories: SearcstringhHistory[]
+  searchHistories: { searchTerms: string[] }
 }
